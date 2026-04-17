@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <main class="profile-card">
+    <div class="glass-card">
+      <div class="avatar-wrap">
+        <img class="avatar" src="675304810_1635645644354795_1734768873117237876_n.jpg" alt="Ảnh đại diện" onerror="this.src='https://via.placeholder.com/300x300?text=Ảnh+đại+diện'" />
+      </div>
+      <div class="profile-info">
+        <h1>Thẩm Bích Hạnh</h1>
+        <p class="title">Checkpage tại công ty Trung Anh Group</p>
+        <p class="motto">Châm ngôn: checkpage không gắt nhưng trùng số là bắt 🙂</p>
+      </div>
+      <section class="message-box">
+        <h2>Ô lời nhắn</h2>
+        <label>
+          Tên người gửi
+          <input type="text" placeholder="Nhập tên của bạn" />
+        </label>
+        <label>
+          Lời nhắn
+          <textarea id="messageText" rows="4" placeholder="Viết lời nhắn ở đây..."></textarea>
+        </label>
+        <button id="sendMessageButton" class="send-btn">Gửi tin nhắn</button>
+        <p id="messageStatus" class="message-status"></p>
+      </section>
+      <button id="giftButton" class="gift-btn">Tặng quà</button>
+    </div>
+  </main>
+  <canvas id="fireworksCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
